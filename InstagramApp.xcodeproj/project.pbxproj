@@ -15,6 +15,7 @@
 		30B8BBF22BF3D7CA00010A6E /* AuthManeger .swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BBF12BF3D7CA00010A6E /* AuthManeger .swift */; };
 		30B8BBF42BF3D82500010A6E /* StorageManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BBF32BF3D82500010A6E /* StorageManager .swift */; };
 		30B8BBF62BF3DA2100010A6E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 30B8BBF52BF3DA2100010A6E /* FirebaseStorage */; };
+		30B8BBF82BF3F79400010A6E /* Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BBF72BF3F79400010A6E /* Extension .swift */; };
 		30BA51852BF26B52001657A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA51842BF26B52001657A2 /* AppDelegate.swift */; };
 		30BA51872BF26B52001657A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA51862BF26B52001657A2 /* SceneDelegate.swift */; };
 		30BA518C2BF26B52001657A2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 30BA518B2BF26B52001657A2 /* Base */; };
@@ -42,6 +43,7 @@
 		30B8BBEF2BF3D68800010A6E /* DataBaseManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataBaseManager .swift"; sourceTree = "<group>"; };
 		30B8BBF12BF3D7CA00010A6E /* AuthManeger .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthManeger .swift"; sourceTree = "<group>"; };
 		30B8BBF32BF3D82500010A6E /* StorageManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageManager .swift"; sourceTree = "<group>"; };
+		30B8BBF72BF3F79400010A6E /* Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension .swift"; sourceTree = "<group>"; };
 		30BA51812BF26B52001657A2 /* InstagramApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BA51842BF26B52001657A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30BA51862BF26B52001657A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				30B8BBEF2BF3D68800010A6E /* DataBaseManager .swift */,
 				30B8BBF32BF3D82500010A6E /* StorageManager .swift */,
 				30B8BBF12BF3D7CA00010A6E /* AuthManeger .swift */,
+				30B8BBF72BF3F79400010A6E /* Extension .swift */,
 			);
 			path = "Resources ";
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				30BA51AB2BF271C2001657A2 /* CameraViewController.swift in Sources */,
 				30BA51AF2BF271D5001657A2 /* ExploreViewController.swift in Sources */,
 				30BA51B92BF27312001657A2 /* RegistrationViewController.swift in Sources */,
+				30B8BBF82BF3F79400010A6E /* Extension .swift in Sources */,
 				30BA51C72BF274F1001657A2 /* PostEditorViewController.swift in Sources */,
 				30BA51BB2BF27347001657A2 /* PostViewController.swift in Sources */,
 				30BA51B12BF271E1001657A2 /* NotificationViewController.swift in Sources */,
