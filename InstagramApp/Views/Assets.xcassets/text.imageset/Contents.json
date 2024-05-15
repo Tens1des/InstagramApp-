@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "5878faabdbde40edd6a32228e946a120.jpg",
+      "filename" : "logo nice .png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -11,6 +11,18 @@
     },
     {
       "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
       "scale" : "3x"
     }
   ],
