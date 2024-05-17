@@ -222,6 +222,19 @@ class LoginViewController: UIViewController {
                   return
               }
         //Login functionlly
+        if usernameEmail.contains("@"), usernameEmail.contains(".") {
+            //email
+        }
+        else {
+            //username 
+        }
+        
+        
+        
+        AuthManager.shared.loginUser(username: <#T##String?#>,
+                                     email: <#T##String?#>,
+                                     password: password,
+                                     completion: <#T##((Bool) -> Void)##((Bool) -> Void)##(Bool) -> Void#>)
         
     }
     @objc private func didTapTremsButton() {
