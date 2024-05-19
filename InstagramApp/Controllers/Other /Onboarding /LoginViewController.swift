@@ -221,20 +221,42 @@ class LoginViewController: UIViewController {
               let password = passwordField.text, !password.isEmpty, password.count >= 8 else {
                   return
               }
-        //Login functionlly
+
+        var username: String?
+        var email: String?
+        
+        
         if usernameEmail.contains("@"), usernameEmail.contains(".") {
-            //email
+            
+            email = usernameEmail
         }
         else {
-            //username 
+            
+            username = usernameEmail
+            
         }
         
         
         
-        AuthManager.shared.loginUser(username: <#T##String?#>,
-                                     email: <#T##String?#>,
-                                     password: password,
-                                     completion: <#T##((Bool) -> Void)##((Bool) -> Void)##(Bool) -> Void#>)
+        AuthManager.shared.loginUser(username: username,email: email,password: password) { success in
+            DispatchQueue.main.async {
+                if success {
+                    //user logged in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                else {
+                    //erorr occurred
+                    let alert = UIAlertController(title: "Log In Erorr",
+                                                  message: "We where unable to log you in .",
+                                                  preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss",
+                                                  style: .cancel,
+                                                  handler: nil))
+                    
+                    self.present(alert, animated: true)
+                }
+            }
+        }
         
     }
     @objc private func didTapTremsButton() {
