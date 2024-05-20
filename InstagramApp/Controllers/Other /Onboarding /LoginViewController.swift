@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     }
     
     
+    
     private let usernameEmailField: UITextField = {
         
         let field = UITextField()
@@ -278,7 +279,9 @@ class LoginViewController: UIViewController {
     }
     @objc private func didTapCreateAcountButton () {
         let vc = RegistrationViewController()
-        present(vc, animated: true)
+        vc.title = "Create Account"
+        
+        present(UINavigationController(rootViewController: vc), animated: true)
     }
     
 
@@ -298,3 +301,4 @@ extension LoginViewController: UITextFieldDelegate {
         return true
     }
 }
+
