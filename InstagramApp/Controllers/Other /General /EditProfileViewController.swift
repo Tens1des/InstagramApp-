@@ -7,10 +7,21 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController {
+class EditProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
+    private let tableView: UITableView = {
+       let tableView = UITableView()
+        tableView.register(UITableViewCell.self,
+                           forCellReuseIdentifier: "cell")
+        return tableView
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(tableView)
+        tableView.delegate = self
+        tableView.dataSource = self 
         view.backgroundColor = .systemBackground
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save",
@@ -31,7 +42,8 @@ class EditProfileViewController: UIViewController {
 
     
     @objc private func  didTapCancel() {
-        
+        dismiss(animated: true,
+                completion: nil)
     }
     
     @objc private func didTapChangeProfilePicture() {
