@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EditProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class EditProfileViewController: UIViewController, UITableViewDataSource{
 
     private let tableView: UITableView = {
        let tableView = UITableView()
@@ -20,8 +20,7 @@ class EditProfileViewController: UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
-        tableView.delegate = self
-        tableView.dataSource = self 
+        tableView.dataSource = self
         view.backgroundColor = .systemBackground
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save",
