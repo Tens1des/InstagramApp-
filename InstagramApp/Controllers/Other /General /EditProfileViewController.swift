@@ -20,6 +20,7 @@ class EditProfileViewController: UIViewController, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
+        
         tableView.dataSource = self
         view.backgroundColor = .systemBackground
 
@@ -34,6 +35,11 @@ class EditProfileViewController: UIViewController, UITableViewDataSource{
                                                            action: #selector(didTapCancel))
 
     }
+    
+    //MARK: -TableView
+    
+    //MARK: - Action
+    
     
     @objc private func  didTapSave() {
         
